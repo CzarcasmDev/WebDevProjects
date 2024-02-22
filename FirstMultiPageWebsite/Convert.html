@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Convert</title>
+    <link rel="stylesheet" href="Asgn4.css" type="text/css">
+<!--common navbar code starts here-->
+<nav class="navbar">
+    <a class="homepage" href="Home.html"> Home </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="greetings" href="Greetings.html"> Greetings! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="alert" href="Alert.html"> Be alerted! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="story" href="Story.html"> Story! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="conversion" href="Convert.html"> MoneyCalc </a>
+</nav>
+<!--common navbar code ends here-->
+    </head>
+<body>
+<script>
+    function calcUSDtoEUR(){
+        var euros;
+        var usd;
+        usd = parseInt(document.calculation.usdollar.value);
+        euros = usd * 0.92;
+        document.getElementById("finalCalc").innerHTML = usd + " USD is " + Math.floor(euros * 2) + " euros.";
+    }
+</script>
+<div class="calcbox">
+    <p>Enter USD to translate to EUR:</p>
+    <form name="calculation" class="calcform">
+        Enter USD: <input type="text" name="usdollar" size="10"> 
+    </form>
+    <button onclick="calcUSDtoEUR()"> Calculate to euros! </button>
+    <p id="finalCalc"> </p>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+body{background-image:url("BlackPoly.jpg")}
+
+.homepara{color:aliceblue;
+font-size:xx-large;
+margin-left:21%;
+margin-top:20%;}
+
+a{
+    background-color:violet;
+    border-style:outset;
+    color:white;
+    padding:20px 35px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:16px;
+}
+a:hover{
+    background-color:blueviolet;
+    color:white;
+    cursor:pointer;
+}
+
+.buttons{
+    padding:10px;
+    margin-left:22%;
+    margin-top:1%;
+}
+
+.TriangleCalc{
+    background-color:rgb(71, 71, 71);
+    height:650px;
+    width:1200px;
+    border-style:outset;
+    margin-left:335px;
+    margin-top:100px;
+    background-image:url("TriArt.png");
+    background-repeat:no-repeat;
+    background-size:cover
+}
+
+.StockImg{height:100px;
+width:250px;
+margin-left:455px;}
+
+input{height:50px;
+background-color:lightpink;
+border-style:inset;}
+
+label{color:white;
+font-size:x-large;
+font-style:italic;}
+
+.TriangleForm{margin-left:100px;}
+
+.InterestForm{margin-left:100px;}
+
+.areatext, .perimtext{color:white;
+font-size:xx-large;
+margin-left:325px;
+border-style:outset;
+background-color:rgb(255, 163, 243);
+width:500px;
+margin-top:100px;}
+
+button{    
+    background-color:violet;
+    border-style:outset;
+    color:white;
+    padding:20px 35px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:16px;
+    margin-left:450px;
+}
+button:hover{
+    background-color:blueviolet;
+    color:white;
+    cursor:pointer;
+}
+
+.instruct{font-size:large;
+font-weight:lighter;
+width:500px;
+color:white;}
+
+.instruct2{font-size:large;
+    font-weight:lighter;
+    width:500px;
+    color:rgb(255, 255, 255);
+    margin-left:50px;}
+
+.Interesting{
+    background-color:rgb(71, 71, 71);
+    height:450px;
+    width:1200px;
+    border-style:outset;
+    margin-left:335px;
+    margin-top:100px;
+    background-image:url("bank.png");
+    background-repeat:no-repeat;
+    background-position-y:500;
+    background-position-x:center;
+}
+
+.interAnswer{font-size:xx-large;
+color:white;
+background-color:violet;
+width:500px;
+border-style:outset;
+margin-left:340px;
+margin-top:100px;
+margin-bottom:100px;}
+

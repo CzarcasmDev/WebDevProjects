@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lincoln Gilliland Assigment 6
+        </title>
+        <link rel="stylesheet" href="drgQuiz.css" type="text/css">
+        <script>
+          function getScores(){
+          var q1, q2, q3, q4, q5, total, right1, right2, right3, right4, right5, missedQuestion1, missedQuestion2, missedQuestion3, missedQuestion4, missedQuestion5;
+          missedQuestion1 = "Question 1 ";
+          missedQuestion2 = "Question 2 ";
+          missedQuestion3 = "Question 3 ";
+          missedQuestion4 = "Question 4 ";
+          missedQuestion5 = "Question 5 ";
+          total = 0;
+          q1 = document.getElementById("q1p3").checked;
+          q2 = document.getElementById("q2p1").checked;
+          q3 = document.getElementById("q3p4").checked;
+          q4 = document.getElementById("q4p1").checked;
+          q5 = document.getElementById("q5").value;
+          q5 = q5.toUpperCase();
+          if (q1 == true){
+            total++;
+            right1 = true;
+          }
+          if (q2 == true){
+            total++;
+            right2 = true;
+          }
+          if (q3 == true){
+            total++;
+            right3 = true;
+          }
+          if (q4 == true){
+            total++;
+            right4 = true;
+          }
+          if (q5 == "RED ROCK BLASTER"){
+            total++;
+            right5 = true;
+          }
+          if (right1 == true){
+              missedQuestion1 = "";
+          }
+          if (right2 == true){
+              missedQuestion2 = "";
+          }
+          if (right3 == true){
+              missedQuestion3 = "";
+          }
+          if (right4 == true){
+              missedQuestion4 = "";
+          }
+          if (right5 == true){
+              missedQuestion5 = "";
+          }
+          if (total == 5){
+            document.getElementById("output").innerHTML = "Exemplary job miner! You have shown your dedication to your labor, and impressed us all. You got all 5 questions correct!";
+          }
+          else if (total == 4){
+            document.getElementById("output").innerHTML = "Satisfactory work employee! You have excelled in the exam and satisfied the requirements to keep your employment. You got the following questions wrong: " + missedQuestion1 + missedQuestion2 + missedQuestion3 + missedQuestion4 + missedQuestion5;
+          }
+          else if (total == 3){
+            document.getElementById("output").innerHTML = "Well... You passed, somehow. Please try to drink a little less before the next exam... You got the following questions wrong: " + missedQuestion1 + missedQuestion2 + missedQuestion3 + missedQuestion4 + missedQuestion5;
+          }
+          else if (total == 2){
+            document.getElementById("output").innerHTML = "Seems like someone spent too much time kicking barrels into the launch bay and not preparing for this test... Applications for employee reinstatement are next week. You got the following questions wrong: " + missedQuestion1 + missedQuestion2 + missedQuestion3 + missedQuestion4 + missedQuestion5;
+          }
+          else if (total == 1){
+            document.getElementById("output").innerHTML = "*sigh* Why does HR keep putting interns through this exam? They aren't even hired yet! <br> ... <br> Wait, You're an employee?? <br> You got the following questions wrong:" + missedQuestion1 + missedQuestion2 + missedQuestion3 + missedQuestion4 + missedQuestion5;
+          }
+          else{
+            document.getElementById("output").innerHTML = "Sometimes I think we should have a drug test before this one... you somehow got NONE of the questions correct. Miserable job, miner."
+          }
+
+          /* alert(q1);
+          alert(q2);
+          alert(q3);
+          alert(q4);
+          alert(q5);
+          alert(total);        */ 
+          }
+        </script>
+    </head>
+<body>
+<img src="drgLogo.png" class="headerLogo" div="logo">
+<div class="mainContent">
+<img src="missionControl.png" class="missionControl"> <p class="missioncontrolspeech1"> <b class="missioncontrolbold">MISSION CONTROL</b> <br>
+                                                          Welcome miners, to the mandatory staff competency screening! I do hope you've studied,
+                                                          despite how often I've seen you at the abyss bar. Answer each question to the best of your ability, and your
+                                                          total will be shown after you submit your answers. Best of luck! Questions not answered will automatically be marked as wrong. </p>
+<div class="question1box">
+<p class="question1"> What does a dwarf name a tamed glyphid? </p>
+<img src="Steeve.png" class="steeve">
+<form name="ques1" class="ques1form">
+  <input type="radio" name="answ1" id="q1p1" value="Steve">  Steve <br>
+  <input type="radio" name="answ1" id="q1p2" value="Steven"> Steven <br>
+  <input type="radio" name="answ1" id="q1p3" value="Steeve"> Steeve <br>
+  <input type="radio" name="answ1" id="q1p4" value="Dogmeat">  Dogmeat <br>
+</form>
+</div>
+
+<div class="question2box">
+  <p class="question2"> What does a dwarf NOT say when saluting? </p>
+  <img src="drgSalute.png" class="salute">
+  <form name="ques2" class="ques2form">
+    <input type="radio" name="answ2" id="q2p1"> Geodes and Pebbles!  <br>
+    <input type="radio" name="answ2" id="q2p2"> For Karl! <br>
+    <input type="radio" name="answ2" id="q2p3"> Stone and Rock! ...Oh, wait... <br>
+    <input type="radio" name="answ2" id="q2p4"> Rock and Stone! <br>
+  </form>
+  </div>
+
+  <div class="question3box">
+    <p class="question3"> Which mineral can be exchanged for additional supplies? </p>
+    <img src="nitra.jpg" class="nitra">
+    <form name="ques3" class="ques3form">
+      <input type="radio" name="answ3" id="q3p1"> Titanium <br>
+      <input type="radio" name="answ3" id="q3p2"> Morkite <br>
+      <input type="radio" name="answ3" id="q3p3"> Gold <br>
+      <input type="radio" name="answ3" id="q3p4"> Nitra <br>
+    </form>
+    </div>
+
+    <div class="question4box">
+      <p class="question4"> What is the nickname given to the mule? </p>
+      <img src="mule.png" class="mule">
+      <form name="ques4" class="ques4form">
+        <input type="radio" name="answ4" id="q4p1"> Molly <br>
+        <input type="radio" name="answ4" id="q4p2"> Dotty <br>
+        <input type="radio" name="answ4" id="q4p3"> Betsy <br>
+        <input type="radio" name="answ4" id="q4p4"> Bosco <br>
+      </form>
+      </div>
+      <div class="question5box">
+        <p class="question5"> What is the name of the beer that increases your max health? <br>
+                              (type your answer down below) </p>
+        <img src="rrb.jpg" class="rrb">
+        <form name="ques5" class="ques5form">
+          <input type="text" name="answ5" id="q5" class="entry">
+        </form>
+        </div>
+
+
+<div class="submitbox">
+  <img src="missionControl.png" class="missionControl2"> <p class="feedback" id="output"> *radio static* </p>
+  <p class="question6"> Are you ready to submit your answers? Make sure you have answered every question! Anything not answered will be marked as wrong! </p>
+  <button class="submitanswers" onclick="getScores()"> ROCK AND STONE! </button>
+</div>
+</div>
+</body>
+</html>

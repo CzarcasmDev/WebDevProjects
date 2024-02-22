@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Triangle Calculator
+        </title>
+        <link rel="stylesheet" href="Triangle.css" type="text/css">
+        <div class="buttons">
+            <a class="HomeButton" href="Asgn5Home.html"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Home. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="TriangleButton" href="Triangle.html" > Triangle Calculator. </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="InterestButton" href="Interest.html"> Interest Calculator. </a>
+            </div>
+    <script>
+        function calcPerim(){
+            var side1;
+            var side2;
+            var side3;
+            var perim;
+            var area;
+            side1 = parseInt(document.sides.side1.value);
+            side2 = parseInt(document.sides.side2.value);
+            side3 = parseInt(document.sides.side3.value);
+            perim = (side1+side2+side3)/2;
+            area = Math.sqrt(perim *(perim-side1)*(perim-side2)*(perim-side3)).toFixed(2);
+            document.getElementById("perim").innerHTML = "Perimeter: " + perim;
+            document.getElementById("area").innerHTML = "Area: " + area;
+        }
+    </script>
+    </head>
+<body>
+    <!--I LOVE FLOAT RESET YEAHHHFSDJBHVJLSKBFDVFKLS JLKB FDSJKLB SDBLKJHFBHDJK DBFSH JK-->
+    <!-- i didnt use float reset, i lied. idk what float reset even is. imr eally tired ): )-->
+    <div class="TriangleCalc"> 
+        <!--<img src="TriArt.png" class="StockImg"> this image ruined my day. i hate stock art and i HATE broken pngs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <form name="sides" class="TriangleForm">
+        <label for="side1">Side 1: </label>  &nbsp; &nbsp; &nbsp; <input type="text" id="side1" name="side1"> &nbsp; &nbsp; &nbsp; 
+        <label for="side2">Side 2: </label> &nbsp; &nbsp; &nbsp; <input type="text" id="side2" name="side2"> &nbsp; &nbsp; &nbsp;
+        <label for="side3">Side 3: </label>  &nbsp; &nbsp; &nbsp;<input type="text" id="side3" name="side3"> &nbsp; &nbsp; &nbsp;
+        </form>
+
+    <p class="perimtext" id="perim">Perimeter: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+    <p class="instruct"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Input the lengths of 3 <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    sides of a triangle to find the area <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    and perimeter.<p>     <button onclick="calcPerim()" > Calculate Perimeter And Area: </button>
+    <p class="areatext" id="area">Area: </p>
+
+
+    </div>
+
+</body>
+</html>

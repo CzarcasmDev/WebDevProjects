@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Story</title>
+    <link rel="stylesheet" href="Asgn4.css" type="text/css">
+<!--common navbar code starts here-->
+<nav class="navbar">
+    <a class="homepage" href="Home.html"> Home </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="greetings" href="Greetings.html"> Greetings! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="alert" href="Alert.html"> Be alerted! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="story" href="Story.html"> Story! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="conversion" href="Convert.html"> MoneyCalc </a>
+</nav>
+<!--common navbar code ends here-->
+    </head>
+    <script>
+        function Story(){
+        var ssname;
+        var ssplace;
+        var ssfood;
+        ssname = document.stName.storyname.value;
+        ssplace = document.stName.storyplace.value;
+        ssfood = document.stName.storyfood.value;
+        story = "Hello! My name is" + " " + ssname + " and this is my story about my best vacation ever to" + " " + ssplace + " where I ate lots of" + " " + ssfood + ". " + ssfood + " is really popular there! I cant wait to go again!";
+        document.getElementById("ssstory").innerHTML = story;
+        }
+    </script>
+<body>
+    <p class="storytitle">The Best Vacation Ever:</p>
+    <div class="storyBox">
+        <form name="stName" class="sform">
+            Enter your name:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="storyname" size="10"> <br>
+            Enter a location:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="storyplace" size="10"> <br>
+            Enter your favorite food:<input type="text" name="storyfood" size="10"> <br>
+        </form>
+    <button onClick="Story()" class="sbutt"> Click to generate a story! </button>
+    <p id="ssstory" class="finalstory"></p>
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lincoln Gilliland Assignment 7 </title>
+        <link rel="stylesheet" href="baseball.css" type="text/css">
+                <!--im so tired-->
+    <script type="text/javascript">
+
+        function calculateCost(){
+            var ticketType;
+            var exhibType;
+            var age;
+            var totalCost = 0;
+            var isTicketChecked = false;
+            var isAgeChecked = false;
+            var isExhibChecked = false;
+            ticketType = document.ticketInfo.selType.value;
+            exhibType = document.ticketInfo.radexhib.value;
+            age = document.ticketInfo.radage.value;
+            if (ticketType == "regular"){
+                totalCost = totalCost + 50;
+                isTicketChecked = true;
+            }
+            if (ticketType == "special"){
+                totalCost = totalCost + 75;
+                isTicketChecked = true;
+            }
+            if (exhibType == "cubs"){
+                totalCost = totalCost + 35;
+                isExhibChecked = true;
+            }
+            if (exhibType == "sox"){
+                totalCost = totalCost + 35;
+                isExhibChecked = true;
+            }
+            if (exhibType == "both"){
+                totalCost = totalCost + 50;
+                isExhibChecked = true;
+            }
+            if (age == "young"){
+                totalCost = totalCost - 20;
+                isAgeChecked = true;
+            }
+            else if (age == "old"){
+                totalCost = totalCost - 25;
+                isAgeChecked = true;
+            }
+            else {totalCost = totalCost;
+                isAgeChecked = true;}
+
+            if (document.ticketInfo.hasCoupon.checked){
+                totalCost = totalCost - 10;
+            }
+            if (document.ticketInfo.hasMember.checked){
+                totalCost = totalCost - 10;
+            }
+
+            if (isTicketChecked == true && isAgeChecked == true && isExhibChecked == true){
+            alert("For a " + ticketType + " ticket, you owe $" + totalCost);
+            }
+            else{alert("You have not answered all questions!")}    
+        }
+        </script>
+    </head>
+<body>
+<form name="ticketInfo" class="main">
+<p class="BigText"> Baseball Hall of Fame Ticket Cost Calculator </p>
+<p> What kind of ticket would you like to buy? </p>
+    <select name="selType" class="selectbox">
+        <option value="regular"> Regular </option>
+        <option value="special"> Special exhibit access </option>
+    </select>
+
+<p> What is your age? <br>
+    <input type="radio" name="radage" value="young" id="radage"> Under 13 <br>
+    <input type="radio" name="radage" value="middle" id="radage" > 13-62 <br>
+    <input type="radio" name="radage" value="old" id="radage" > 62+ <br>
+    </p>
+<p> Would you like to visit: (select one) <br>
+<input type="radio" name="radexhib" value="cubs" id="radexhib"> The Chicago Cubs Exhibition <br>
+<input type="radio" name="radexhib" value="sox" id="radexhib"> The White Sox Exhibition  <br>
+<input type="radio" name="radexhib" value="both" id="radexhib"> Both <br>
+</p>
+<p> Do you have a promotional coupon? <input type="checkbox" name="hasCoupon">  </p>
+<p> Are you a member? <input type="checkbox" name="hasMember">  </p>
+
+<input value="Buy Ticket" onclick="calculateCost()" type="button" class="pricebutton">
+</form>
+</body>
+</html>

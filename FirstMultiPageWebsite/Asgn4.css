@@ -1,0 +1,148 @@
+.navbar{background-color:rgb(170, 146, 255);
+height:70px;
+margin-top:30px;
+width:1205px;
+margin-left:19%;
+background-image:url("PolyPurp.jpg");
+border-style:outset;} 
+
+.story{background-image:url("sleepy.jpg");
+background-size:cover;
+background-position-y:40%}
+
+.greetings{background-image:url("banner.jpg");
+background-size:cover;
+background-position-y:12%;}
+
+.alert{background-image:url("Diogenes.jpg");
+background-size:cover;
+background-position-y:12%;}
+
+.AlertContent{height:200px;
+width:300px;
+color:white;
+background-image:url("BlackPoly.jpg");
+border-style:outset;
+margin-left:800px;
+margin-top:200px;}
+
+.sform{font-size:x-large;
+font-style:italic;
+font-weight:bold;
+color:white;
+margin-left:70px;
+margin-top:30px;}
+
+.sbutt{margin-left:70px;
+margin-top:30px;}
+
+.finalstory{color:white;
+margin-left:50px;
+font-size:x-large;
+font-weight:bold;}
+
+.Instructions{
+    margin-left:50px;
+    font-size:xx-large;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.conversion{background-image:url("convert.png");
+background-size:cover;
+background-position-y:12%;}
+
+.storytitle{
+    margin-left:42%;
+    margin-top:3%;
+    font-size:xx-large;
+    width:338px;
+    color:rgb(0, 0, 0);
+    font-style:italic;
+    font-weight:bold;
+    border-style:outset;
+}
+.storyBox{height:300px;
+width:700px;
+background-image:url("BlackPoly.jpg");
+border-style:outset;
+margin-top:100px;
+margin-left:615px;}
+
+.alertButt{
+    margin-left:50px;
+}
+
+.navbar a{height:0px;
+margin-top:0px;
+font-size:xx-large;
+font-weight:bold;
+padding:30px;
+padding-top:0px;
+border-style:ridge;
+border-color:white;
+color:rgb(0, 0, 0);
+-webkit-text-stroke: 1px white;
+text-decoration:none;}
+
+.calcbox{height:500px;
+width:500px;
+background-image:url("BlackPoly.jpg");
+color:white;
+font-size:xx-large;
+font-style:italic;
+font-weight:bold;
+margin-left:670px;
+margin-top:200px;
+border-style:outset;}
+
+.calcbox p{
+    padding:10px;
+}
+
+.calcbox form{padding:10px;}
+
+.homepage{background-image:url("aura.jpg");
+background-size:cover;
+background-position-y:12%;}
+
+
+body{background-image:url("PolyPurp.jpg");
+background-size:cover;}
+
+.welcometitle{margin-left:42%;
+margin-top:3%;
+font-size:xx-large;
+width:338px;
+color:rgb(0, 0, 0);
+font-style:italic;
+font-weight:bold;
+border-style:outset;}
+
+.aboutmeparagraph{background-color:rgb(170,146,255);
+height:600px;
+width:800px;
+margin-left:29%;
+font-size:x-large;
+font-style:italic;
+background-image:url("BlackPoly.jpg");
+color:white;
+border-style:outset;
+font-weight:bold;}
+
+.aura{height:250px;
+width:250px;
+margin-left:275px;
+margin-top:50px;}
+
+.alertbox{height:270px;
+width:500px;
+background-image:url("BlackPoly.jpg");
+border-style:outset;
+color:white;
+margin-left:35%;
+margin-top:12%;
+font-size:xx-large;
+font-style:italic;
+font-weight:bold;
+padding-left:50px;}

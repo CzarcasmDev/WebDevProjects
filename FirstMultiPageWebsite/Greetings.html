@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Greetings</title>
+    <link rel="stylesheet" href="Asgn4.css" type="text/css">
+<!--common navbar code starts here-->
+<nav class="navbar">
+    <a class="homepage" href="Home.html"> Home </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="greetings" href="Greetings.html"> Greetings! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="alert" href="Alert.html"> Be alerted! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="story" href="Story.html"> Story! </a>
+    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;
+    <a class="conversion" href="Convert.html"> MoneyCalc </a>
+</nav>
+<!--common navbar code ends here-->
+    </head>
+<body>
+<div class="alertbox">
+    <p> Click to be greeted! </p>
+    <script type="text/javascript"> 
+    function beGreeted(){
+        document.getElementById("para").innerHTML = "You've been greeted!"
+    }</script>
+    <button onclick="beGreeted()"> Be greeted! </button>
+    <p id="para"> </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Interest Calculator
+        </title>
+        <link rel="stylesheet" href="Triangle.css" type="text/css">
+        <div class="buttons">
+            <a class="HomeButton" href="Asgn5Home.html"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Home. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="TriangleButton" href="Triangle.html" > Triangle Calculator. </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="InterestButton" href="Interest.html"> Interest Calculator. </a>
+            </div>
+        <!--broken piece of garbage script-->
+        <script>
+            function MonthlyPayment(){
+                var p;
+                var r;
+                var n;
+                var m;
+                p = parseInt(document.interV.loan.value);
+                r = parseInt(document.interV.rate.value);
+                n = parseInt(document.interV.years.value);
+                m = (p * r/1200.0)/(1-Math.pow(1.0+r/1200.0,-12.0*n));
+                document.getElementById("monthly").innerHTML = "Monthly Payment Is: " + m.toFixed(2);
+            }
+        </script>
+    </head>
+<body>
+    <div class="Interesting">
+        <form name="interV" class="InterestForm">
+            <label for="loan">Loan Size: </label>  &nbsp; &nbsp; &nbsp; <input type="text" id="loan" name="loan"> &nbsp; &nbsp; &nbsp; 
+            <label for="rate">Interest Rate: </label> &nbsp; &nbsp; &nbsp; <input type="text" id="rate" name="rate"> &nbsp; &nbsp; &nbsp;
+            <label for="years">Years: </label>  &nbsp; &nbsp; &nbsp;<input type="text" id="years" name="years"> &nbsp; &nbsp; &nbsp;</form><p id="monthly" class="interAnswer">Monthly Payment is: </p>
+    <p class="instruct2"> Click the button below to <br> calculate the monthly payment of a loan <br> given the amount, interest rate, and duration!</p>
+    <button onClick="MonthlyPayment()">Calculate Monthly Payment:</button>
+    </div>
+
+    
+</body>
+</html>
